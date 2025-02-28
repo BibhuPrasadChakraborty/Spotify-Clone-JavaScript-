@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Web Player</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<script type="module" src="index.js"></script>
+
+<body>
+
+    <div class="main_container">
+        <nav class="navbar">
+            <img src="icons/Spotify_logo.svg" alt="Spotify_logo" id="spotify_logo">
+
+            <button id="home_icon">
+                <img src="icons/homeicon.svg" alt="home_icon" class="icons" id="home_logo">
+            </button>
+
+            <div class="search_bar_container">
+                <img src="icons/searchicon.svg" alt="search_icon" class="icons">
+                <input type="text" placeholder="What do you want to play?" id="search_bar">
+                <img src="icons/browseicon.svg" alt="browseicon" class="icons">
+            </div>
+
+
+            <h1 id="sign_up">Sign up</h1>
+            <button id="login_btn">
+                <h1>Log in</h1>
+            </button>
+        </nav>
+
+
+
+
+        <div class="body_container">
+            <div class="library_artists_container">
+
+                <div class="library_container">
+                    <div class="your_library_container">
+                        <div class="library_logo_yourLibrary">
+                            <img src="icons/library.svg" alt="library" class="icons library_add">
+                            <h1 id="your_library">Your Library</h1>
+                        </div>
+                        <img src="icons/+icon.svg" alt="add" class="icons library_add" id="add_icon">
+                    </div>
+
+                    <div class="songsList">
+                    </div>
+
+                    <div class="library_footer">
+                        <a href="#" class="library_footer_links">Legal</a>
+                        <a href="#" class="library_footer_links">Safety & Privacy Center</a>
+                        <a href="#" class="library_footer_links">Privacy Policy</a>
+                        <a href="#" class="library_footer_links">Cookies</a>
+                        <a href="#" class="library_footer_links">About Ads</a>
+                        <a href="#" class="library_footer_links">Accessibility</a>
+                    </div>
+                </div>
+
+                <div class="artists_container">
+
+                    <div class="inside_artist_container">
+                    </div>
+
+                    <div class="poster_container">
+                        <img src="India's Best/neffex.jpg" alt="artist_poster" class="artists_poster">
+                        <h1 class="artists_name">Neffex</h1>
+                    </div>
+
+                    <div class="playbar_container">
+
+                        <div class="song_title_container">
+                            <h1 id="song-name"></h1>
+                        </div>
+
+
+
+                        <div class="controlling_btns">
+                            <img src="icons/previousicon.svg" alt="previousicon" class="icons" id="previousicon">
+                            <img src="icons/playicon.svg" alt="playicon" class="icons" id="playicon">
+                            <img src="icons/nexticon.svg" alt="nexticons" class="icons" id="nexticon">
+                        </div>
+
+                        <div class="track_bar">
+                            <div class="timer_container">
+                                <span id="current_time" class="time">0:00</span>
+                                <span id="total_duration" class="time">0:00</span>
+                            </div>
+                            <div id="audio_track">
+                                <div class="circular_container"></div>
+                            </div>
+                            <!-- <audio controls id="song-audio" autoplay>
+                                <source src="" type="audio/mpeg">
+                            </audio> -->
+                        </div>
+
+                    </div>
+                    <!-- <img src="India's Best/neffex.jpg" class="songbar_poster"> -->
+                    <!-- <div class="song-info">
+                        <span id="current-time">0:00</span>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <span id="duration">0:00</span>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <footer class="main_footer"></footer>
+    </div>
+
+</body>
+
+</html>

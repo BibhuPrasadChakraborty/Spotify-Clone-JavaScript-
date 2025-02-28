@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 19px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.main_container {
+    margin-left: 12px;
+    margin-right: 12px;
+
+}
+
+body {
+    background-color: black;
+}
+
+.icons {
+    width: 34px;
+    height: 34px;
+}
+
+.icons:hover {
+    transform: scale(1.09);
+}
+
+.navbar {
+    width: 100%;
+    height: 59px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+:root {
+    --background-color: rgb(28, 26, 26);
+    --blackbackground: rgb(18, 18, 18);
+}
+
+.search_bar_container {
+    /* border-radius: 19px;: 2px solid red; */
+    border-radius: 19px;
+    border: none;
+    display: flex;
+    width: 20vw;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--background-color);
+    border-radius: 19px;
+    -radius: 30px;
+    margin-left: -20px;
+
+}
+
+input {
+    height: 50px;
+    width: 100%;
+    background: transparent;
+    border-radius: 19px;
+    border-radius: 19px;
+    border-radius: 22px;
+}
+
+#home_icon {
+    border-radius: 19px;
+    -radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 19px;
+    border: none;
+    background-color: rgb(79, 64, 64);
+
+}
+
+#home_icon:hover {
+    transform: scale(1.02);
+}
+
+#home_logo {
+    filter: brightness(0)invert(1);
+}
+
+#login_btn {
+    border-radius: 19px;
+    -radius: 59px;
+    width: 80px;
+}
+
+#login_btn:hover {
+    transform: scale(1.09);
+}
+
+#spotify_logo {
+    filter: brightness(0)invert(1);
+}
+
+#sign_up {
+    color: white;
+}
+
+#sign_up:hover {
+    /* color:white; */
+    text-decoration: underline;
+    transform: scale(1.12);
+}
+
+
+
+/* for library container */
+.library_container {
+    width: 25vw;
+    height: 100vh;
+    background-color: rgb(18, 18, 18);
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px;
+    gap: 20px;
+    overflow: hidden;
+    border-radius: 19px;
+    -radius: 18px;
+    background-color: var(--background-color);
+}
+
+.library_logo_yourLibrary {
+    display: flex;
+    align-items: center;
+
+}
+
+.your_library_container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.library_add {
+    filter: brightness(0)invert(1);
+    margin-right: 3px;
+}
+
+#your_library {
+    color: white;
+    font-size: 20px;
+}
+
+/* library footer container */
+.library_footer_links {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+.library_footer_links:hover {
+    text-decoration: underline;
+    color: rgb(0, 255, 55);
+
+
+}
+
+.library_footer {
+
+    padding: 20px;
+    margin-top: auto;
+}
+
+
+
+/* setting for the artist container */
+.artists_container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(18, 18, 18);
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px;
+    gap: 20px;
+    overflow: hidden;
+    border-radius: 19px;
+    -radius: 18px;
+    background-color: var(--background-color);
+    position: relative;
+}
+
+.library_artists_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+/* setting the audio posters */
+
+.inside_artist_container {
+    margin: 33px;
+    overflow-y: auto;
+}
+
+.poster_container {
+    width: 300px;
+    height: 400px;
+    border-radius: 19px;
+    -radius: 22px;
+    overflow: hidden;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.poster_container:hover {
+    transform: scale(1);
+    background-color: var(--blackbackground);
+    transform: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.artists_poster {
+    width: 200px;
+    height: 200px;
+    border-radius: 19px;
+    -radius: 22px;
+    object-fit: cover;
+    margin-top: 12px;
+}
+
+.artists_poster:hover {
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+    width: 230px;
+    height: 230px;
+    cursor: pointer;
+}
+
+.artists_name {
+    color: white;
+    margin: 17px;
+    margin-left: 0px;
+    /* align-self: flex-start; */
+}
+
+.artists_name:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    /* align-self: flex-start; */
+}
+
+
+/* designing the playbar container */
+.playbar_container {
+    width: 100%;
+    height: 299px;
+    /* background-color: rgb(26, 57, 6); */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 0px;
+    gap: 30px;
+    border-radius: 19px;
+    background-color: var(--blackbackground);
+    /* background-color: rgb(243, 239, 239); */
+    margin: auto;
+    border-top: 1px solid #282828;
+    align-self: flex-end;
+    z-index: 1;
+}
+
+.playbar_container img {
+    filter: brightness(0)invert(1);
+}
+
+/* creating the songs */
+.songs_container {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(18, 18, 18);
+    display: flex;
+    padding: 8px 12px;
+    gap: 20px;
+    overflow: hidden;
+    border-radius: 19px;
+    -radius: 18px;
+    background-color: var(--background-color);
+    position: relative;
+
+}
+
+.song-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* Decoration of the song */
+.song-name {
+    color: aliceblue;
+    font-size: 1.3em;
+    margin: 22px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 19px;
+}
+
+.song-name:hover {
+    color: greenyellow;
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(1.02);
+}
+
+
+/* /* style for the name of the artist */
+.artist-names {
+    font-size: 1.3rem;
+    color: rgb(150, 147, 147);
+
+}
+
+.artist-names:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.songname {
+    font-size: 0.9rem;
+    width: 10vmin;
+    overflow: hidden;
+}
+
+.music_icons {
+    filter: brightness(0) invert(1);
+}
+
+/* playnow writting */
+.playnow {
+    color: white;
+    font-size: 1.9rem;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    width: 90px;
+}
+
+.playnow_artist_container {
+    /* border: 1px solid white; */
+    align-self: flex-end;
+}
+
+/* audio{
+    width: 100%;
+    
+} */
+
+#song-name {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    text-decoration: none;
+    width: 300px;
+
+}
+
+.track_bar {
+    width: 100%;
+}
+
+
+/* desinging the audio trackbar */
+#audio_track {
+    width: 100%;
+    height: 10px;
+    background-color: rgb(251, 247, 247);
+    border-radius: 19px;
+    -radius: 18px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.circular_container {
+    width: 33px;
+    /* Set the width of the circle */
+    height: 33px;
+    /* Set the height of the circle */
+    border-radius: 50%;
+    /* Make the div circular */
+    background-color: #c2fd75;
+    /* Set the background color */
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    /* Add this */
+    left: 0;
+    /* Add this */
+    top: 50%;
+    /* Add this */
+    transform: translateY(-50%);
+    /* Add this */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .circular_container:hover {
+    transform: scale(1.03);
+    position: relative;
+    transition: background-color 0.3s ease-in-out;
+} */
+
+
+.timer_container {
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    color: white;
+}
+
+.time {
+    width: 100px;
+    height: 90px;
+    font-size: 1.2rem;
+    /* background-color: aqua; */
+}
+#previousicon{
+    cursor: pointer;
+    
+}
+#nexticon{
+    cursor: pointer;
+
+}
+
+.song_title_container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+    overflow: hidden;
+}
+#song-name{
+    color: white;
+}
+/* playnow artist-container */
+
+#search_bar{
+    color:white;
+}
