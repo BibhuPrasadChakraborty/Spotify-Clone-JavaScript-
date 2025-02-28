@@ -11,6 +11,53 @@
 
 <body>
 
+    <div class="form-container" id="formContainer">
+        <h2>Sign Up</h2>
+        <form id="signupform">
+
+
+
+            <input type="text" id="name" class="input-field" placeholder="Full Name" required>
+            <input type="email" id="email" class="input-field" placeholder="Email" required>
+            <input type="password" id="password" class="input-field" placeholder="Create Password" required>
+            <input type="password" id="confirmPassword" class="input-field" placeholder="Confirm Password" required>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="terms">
+                <label for="terms">Accept all Terms & Conditions</label>
+            </div>
+
+            <button class="btn" id="signupBtn" >Sign Up</button>
+
+            <p class="login-link">Already signed up? <a href="#">Login</a></p>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- after clicking on the login, the functionality will show up -->
+
+
+
+    <div id="loginContainer" class="hidden">
+        <div class="login-box">
+            <form id="loginForm" method="post">
+                <h1>LOGIN</h1>
+                <input type="text" placeholder="Enter your Email-ID">
+                <input type="password" placeholder="Enter your pasword Password">
+                <button id="login_enter_btn">Login</button>
+                <h1 id="login_message">Haven't signed in? <a href="#">Sign uP</a></h1>
+            </form>
+
+        </div>
+    </div>
+
+
     <div class="main_container">
         <nav class="navbar">
             <img src="icons/Spotify_logo.svg" alt="Spotify_logo" id="spotify_logo">
@@ -30,6 +77,7 @@
             <button id="login_btn">
                 <h1>Log in</h1>
             </button>
+
         </nav>
 
 

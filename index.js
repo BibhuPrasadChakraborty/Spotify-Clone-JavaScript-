@@ -158,7 +158,6 @@ next_icon.addEventListener("click", next_song);
 previous_icon.addEventListener("click", previous_song);
 // This function will create the entire list of the song element
 
-
 async function creatingSongElement() {
   let songList = await getsongs();
 
@@ -190,11 +189,57 @@ async function creatingSongElement() {
   });
 }
 
-// console.log(playsong());
+// THE LOGIN FUNCTINALITY
 
-// const play_icon = document.querySelector("#playicon");
-// const previous_icon = document.querySelector("#previousicon");
-// const next_icon = document.querySelector("#nexticon");
+// accessing the login button
+const login_Button = document.querySelector("#login_btn");
+const login_Container = document.querySelector("#loginContainer");
 
-searchBar.addEventListener("input",creatingSongElement);
-search_for_songs();
+// function to validate the login
+
+function validateLogin() {
+  // Toggle login container
+  login_Button.addEventListener("click", function () {
+    const login_Container = document.getElementById("loginContainer");
+    login_Container.style.display =
+      login_Container.style.display === "none" ||
+      login_Container.style.display === ""
+        ? "flex"
+        : "none";
+  });
+
+  // Close login when clicking outside the login box
+  login_Container.addEventListener("click", function (e) {
+    if (e.target === this) {
+      this.style.display = "none";
+    }
+  });
+
+  console.log("clicked for login function");
+}
+
+validateLogin();
+
+const signup_btn = document.querySelector("#sign_up");
+const form_container = document.querySelector("#formContainer");
+const signUP_enter = document.querySelector("#signupBtn");
+
+function signin_func() {
+  signup_btn.addEventListener("click", (e) => {
+
+    form_container.style.display =
+      form_container.style.display === "none" ||
+      form_container.style.display === ""
+        ? "flex"
+        : "none";
+  });
+
+  // Close login when clicking outside the login box
+  form_container.addEventListener("click", function (e) {
+    if (e.target === this) {
+      this.style.display = "none";
+      
+    }
+  });
+}
+signin_func();
